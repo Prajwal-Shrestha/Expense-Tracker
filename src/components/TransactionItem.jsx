@@ -6,9 +6,8 @@ export default function TransactionItem({ transaction, onDelete, isNew = false }
 
   return (
     <li
-      className={`flex items-center gap-3 bg-surface rounded-2xl border border-line pl-1 pr-4 py-3 mb-2 group ${
-        isNew ? 'animate-slide-in' : ''
-      }`}
+      className={`flex items-center gap-3 bg-surface rounded-2xl border border-line pl-1 pr-4 py-3 mb-2 group ${isNew ? 'animate-slide-in' : ''
+        }`}
     >
       <span className={`w-1.5 self-stretch rounded-full ${isIncome ? 'bg-income' : 'bg-expense'}`} />
       <div className="min-w-0 flex-1">
@@ -18,8 +17,7 @@ export default function TransactionItem({ transaction, onDelete, isNew = false }
         </p>
       </div>
       <div className="flex items-center gap-4 shrink-0">
-        <span className={`tabular text-sm sm:text-base font-medium ${isIncome ? 'text-income' : 'text-expense'}`}>
-          {isIncome ? '+' : '-'}
+        <span className={`tabular text-sm sm:text-[1rem] font-medium ${isIncome ? 'text-income' : 'text-expense'}`}>          {isIncome ? '+' : '-'}
           {CURRENCY_SYMBOL} {formatNPR(amount)}
         </span>
         <button
