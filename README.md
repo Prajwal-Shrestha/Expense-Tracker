@@ -62,14 +62,22 @@ src/
   main.jsx
   index.css
 ```
-
 ## Screenshots
 
-<!-- Add 2–3 screenshots of the running app here before submitting, e.g.: -->
-<!-- ![Empty state](./screenshots/empty-state.png) -->
-<!-- ![With transactions](./screenshots/with-transactions.png) -->
-<!-- ![Calendar view](./screenshots/calendar.png) -->
+### Full UI
+![Full UI](./screenshots/Full%20Ui.png)
 
+### Expense
+![Expense](./screenshots/expense.png)
+![Expense details in BS calendar](./screenshots/expensedetailincalenderinbs.png)
+![Expense details in AD calendar](./screenshots/expensedetailincalenderinad.png)
+![Expense transaction detail](./screenshots/expensetransationdetail.png)
+
+### Income
+![Income](./screenshots/income.png)
+![Income details in BS calendar](./screenshots/incomedetailincalenderinbs.png)
+![Income details in AD calendar](./screenshots/incomedetailincalenderinad.png)
+![Income transaction detail](./screenshots/incometransationdetail.png)
 ## Known limitations
 
 - No charting yet (spending-by-category chart is a stretch goal, not implemented)
