@@ -15,6 +15,7 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+/* One orchestrated entrance for the hero balance figures on load/update. */
 @keyframes rise-in {
   from {
     opacity: 0;
@@ -29,6 +30,7 @@ body {
   animation: rise-in 0.5s ease-out;
 }
 
+/* New transaction rows slide in from the left instead of just appearing. */
 @keyframes slide-in {
   from {
     opacity: 0;
@@ -43,6 +45,7 @@ body {
   animation: slide-in 0.35s ease-out;
 }
 
+/* Crossfade between List and Calendar views. */
 @keyframes view-fade {
   from {
     opacity: 0;

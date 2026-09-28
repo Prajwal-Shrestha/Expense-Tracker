@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLocalStorage } from './hooks/useLocalStorage.js'
-import header from './components/header.jsx'
-import summary from './components/summary.jsx'
+import Header from './components/Header.jsx'
+import Summary from './components/Summary.jsx'
 import TransactionForm from './components/TransactionForm.jsx'
 import TransactionList from './components/TransactionList.jsx'
 import CalendarView from './components/CalendarView.jsx'
@@ -12,7 +12,8 @@ export default function App() {
   const [justAddedId, setJustAddedId] = useState(null)
   const clearTimer = useRef()
 
-
+  // Keep the browser tab title in sync with the entry count —
+  // a small, real use of useEffect beyond the persistence hook itself.
   useEffect(() => {
     document.title = transactions.length
       ? `Money Manager (${transactions.length})`

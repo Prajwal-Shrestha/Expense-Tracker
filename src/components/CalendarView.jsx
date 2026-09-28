@@ -13,15 +13,18 @@ import TransactionItem from './TransactionItem.jsx'
 
 export default function CalendarView({ transactions, onDelete, justAddedId }) {
   const today = new Date()
-  const [system, setSystem] = useState('bs') 
+  const [system, setSystem] = useState('bs') // 'bs' | 'ad'
 
+  // --- AD (Gregorian) month state ---
   const [adCursor, setAdCursor] = useState(new Date(today.getFullYear(), today.getMonth(), 1))
 
+  // --- BS (Bikram Sambat) month state ---
   const todayBs = adToBs(today)
   const [bsCursor, setBsCursor] = useState({ year: todayBs.year, month: todayBs.month })
 
   const [selected, setSelected] = useState(dateKey(today))
 
+  // Net total per day (income − expenses), keyed by YYYY-MM-DD — shared by both calendars.
   const totalsByDay = useMemo(() => {
     const map = {}
     for (const t of transactions) {
