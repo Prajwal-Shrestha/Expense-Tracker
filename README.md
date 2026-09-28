@@ -4,7 +4,7 @@ A single-page React app for logging income and expenses, tracking a running bala
 and reviewing spending day by day.
 
 ## Live Preview
-[text](https://money-manager-prajwal-shresthas-projects-05676b83.vercel.app/)
+[Live Preview](https://money-manager-prajwal-shresthas-projects-05676b83.vercel.app/)
 
 ## Features
 
