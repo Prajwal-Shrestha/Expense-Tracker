@@ -3,6 +3,9 @@
 A single-page React app for logging income and expenses, tracking a running balance,
 and reviewing spending day by day.
 
+## Live Preview
+[text](https://money-manager-prajwal-shresthas-projects-05676b83.vercel.app/)
+
 ## Features
 
 - Add transactions with amount, type (income/expense), category, description, and date
