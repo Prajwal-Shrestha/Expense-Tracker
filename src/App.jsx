@@ -4,4 +4,4 @@ import header from './components/header.jsx'
 import summary from './components/summary.jsx'
 import TransactionForm from './components/TransactionForm.jsx'
 import TransactionList from './components/TransactionList.jsx'
-
+import CalendarView from './components/CalendarView.jsx'
