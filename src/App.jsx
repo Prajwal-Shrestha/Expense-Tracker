@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useLocalStorage } from './hooks/useLocalStorage.js'
 import Header from './components/header.jsx'
-import Summary from './components/Summary.jsx'
+import Summary from './components/summary.jsx'
 import TransactionForm from './components/TransactionForm.jsx'
 import TransactionList from './components/TransactionList.jsx'
 import CalendarView from './components/CalendarView.jsx'
