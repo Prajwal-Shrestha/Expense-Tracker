@@ -12,8 +12,7 @@ export default function App() {
   const [justAddedId, setJustAddedId] = useState(null)
   const clearTimer = useRef()
 
-  // Keep the browser tab title in sync with the entry count —
-  // a small, real use of useEffect beyond the persistence hook itself.
+
   useEffect(() => {
     document.title = transactions.length
       ? `Money Manager (${transactions.length})`
